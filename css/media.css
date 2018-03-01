@@ -1,0 +1,381 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */ 
+  .header .header__search .header__search-input {
+    width: 200px;
+  }
+
+  ..header .header__central {
+    margin-top: 30px;
+  }
+
+  .header .header__call-btn {
+    width: 100%;
+  }
+
+  .header .header__phones {
+    margin-top: 14px;
+    float: left;
+  }
+
+  .header .header__clock {
+    float: left;
+  }
+
+  .header .header__user-icons {
+    margin-top: 20px;
+  }
+
+  .header .header__search .header__search-input,
+  .header .header__search {
+    width: 100%;
+  }
+
+  .header .header__user-icons {
+    margin-top: 25px;
+  }
+  
+  .footer .footer__news .footer__heading {
+    margin-top: 30px;
+  }
+
+  .footer .footer__contacts .footer__contacts__phones .footer__contacts__phones__number {
+    margin-left: 8px;
+    margin-top: 20px;
+    position: absolute;
+  } 
+
+  .footer .footer__contacts .footer__contacts__phones .footer__contacts__phones__number-first {
+    margin-top: 3px;
+  }
+
+  .footer .footer__contacts .footer__contacts__address .footer__contacts__address__text {
+    margin-left: 8px;
+    position: absolute;
+  }
+
+  .footer .footer__contacts .footer__contacts__email .footer__contacts__email__address {
+    position: absolute;
+    margin-left: 8px;
+  }
+
+  .footer .footer__contacts .footer__contacts__email {
+    margin-top: 22px;
+  }
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+  .header .header__clock .header__clock__time {
+    width: 160px;
+  }
+
+  .top-categories .top-categories__list .top-categories__list__item {
+    width: 20%;
+  }
+
+  .novelties .novelties__products {
+    margin-top: 0;
+  }
+
+  .novelties .novelties__products .novelties__products__item {
+    margin-top: 40px;
+  }
+
+  .footer .footer__contacts .footer__contacts__address .footer__contacts__address__text {
+    margin-top: 0;
+  }
+
+  .footer .footer__contacts .footer__contacts__phones {
+    margin-top: 25px;
+  }
+
+  .footer .footer__contacts .footer__contacts__email .footer__contacts__email__address {
+    margin-top: 0;
+    position: absolute;
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ 
+  .header .header__call-btn {
+    width: 100%;
+    float: none;
+    margin-top: 35px;
+  }
+
+  .header .header__phones {
+    float: none;
+    margin-top: 25px;
+  }
+
+  .header .header__clock .header__clock__time {
+    width: auto;
+  }
+
+  .header .header__search {
+    margin-top: 35px;
+  }
+
+  .top-categories .top-categories__list .top-categories__list__item {
+    width: 49%;
+  }
+
+  .footer {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .footer .footer__heading {
+    margin-top: 40px;
+  }
+
+  .footer .footer__text {
+    max-width: none;
+  }
+
+  .footer .footer__social-link {
+    margin-top: 24px;
+  }
+
+  .footer .footer_second-row {
+    margin-top: 0;
+  }
+
+  .footer .footer__logo {
+    text-align: center;
+  }
+  
+  .footer .footer__logo .footer__logo__name {
+    font-size: 19px;
+  }
+
+  .footer .footer__logo .footer__logo__text {
+    font-size: 11px;
+  }
+  
+  .footer .contact-icon {
+    float: none;
+  }
+
+  .footer .footer__contacts .footer__contacts__address .footer__contacts__address__text {
+    position: relative;
+    float: none;
+  }
+  
+  .footer .footer__contacts .footer__contacts__phones {
+    max-width: none;
+  }
+
+  .footer .footer__contacts .footer__contacts__phones .footer__contacts__phones__number {
+    float: none;
+    position: relative;
+  } 
+
+  .footer .footer__contacts .footer__contacts__email {
+    margin-top: 25px;
+  }
+
+  .footer .footer__contacts .footer__contacts__email .footer__contacts__email__address {
+    position: relative;
+  }
+
+  .footer .footer__info {
+    float: none;
+    width: auto;
+  }
+
+  .footer .footer__news {
+    float: none;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  /**/
+  .header-nav {
+    display: none;
+  }
+
+  .header {
+    padding-top: 0;
+    border-bottom: none;
+    padding-bottom: 12px;
+  }
+
+    .header .header__call-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 9px;
+      margin-top: 0;
+      width: auto;
+      float: none;
+    }
+
+    .header .header__clock {
+      display: none;
+    }
+
+    .header .header__phones {
+      width: 62%;
+      margin-top: 0;
+      float: left;
+    }
+
+      .header .header__phones .mdi {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-right: 8px;
+      }
+
+      .header .header__phones .header__phones__link {
+        font-size: 10px;
+        margin-top: 13px;
+        float: left;
+        letter-spacing: 0;
+        font-size: 10px;
+      }
+
+      .header .header__phones .header__phones__link-first {
+        margin-right: 6px;
+      }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .main-slider img {
+    height: 210px;
+  }
+
+  .novelties {
+    margin-top: 30px;
+  }
+
+  .novelties .novelties__products .novelties__products__item {
+    margin-top: 20px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__photo .novelties__products__item__photo__new {
+    font-size: 9px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__photo .cart {
+    right: 47px;
+  }
+  
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__photo .like {
+    right: 13px;
+  }
+  
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__photo .novelties__products__item__photo__button {
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__name {
+    font-size: 13px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__star {
+    margin-top: 9px;
+    font-size: 14px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__comments {
+    font-size: 11px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__price {
+    font-size: 15px;
+  }
+
+  .novelties .novelties__products .novelties__products__item .novelties__products__item__buy {
+    font-size: 9px;
+  } 
+
+  .footer {
+    padding-top: 25px;
+  }
+
+  .footer .contact-icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer__contacts .footer__contacts__phones .footer__contacts__phones__number {
+    display: block;
+    margin-top: 7px;
+  }
+
+  .footer .footer__heading {
+    margin-top: 40px;
+  }
+
+  .footer .footer__contacts .footer__contacts__address {
+    margin-top: 16px;
+  }
+
+  .footer .footer__contacts .footer__contacts__phones, .footer .footer__contacts .footer__contacts__email {
+    margin-top: 10px;
+  }
+
+  .footer .footer__text, .footer .footer__contacts .footer__contacts__address .footer__contacts__address__text, 
+  .footer .footer__contacts .footer__contacts__phones .footer__contacts__phones__number,
+  .footer .footer__contacts .footer__contacts__email .footer__contacts__email__address,
+  .footer__pages__item__link, .footer .footer__watermark {
+    font-size: 11px;
+  }
+
+  .footer .footer__form .footer__form__submit {
+    font-size: 9px;
+  }
+
+  .footer .footer__pages .footer__pages__item {
+    padding: 5px 0;
+  }
+
+  .footer .footer__logo .footer__logo__text {
+    font-size: 9px;
+  }
+
+  .footer .footer__logo .footer__logo__name {
+    font-size: 18px;
+  }
+
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+
+}
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ 
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ 
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 769px) {
+  /**/ 
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ a
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ 
+	
+}

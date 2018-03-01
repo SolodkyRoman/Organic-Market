@@ -38,6 +38,10 @@ a {
 	text-align: center;
 }
 
+.relative {
+	position: relative;
+}
+
 .header-nav {
 	background-color: #f7f7f7;
 	padding: 18px 0;
@@ -155,6 +159,9 @@ a {
 				height: 30px;
 				width: 230px;
 				padding-right: 50px;
+				padding-left: 7px;
+				font-size: 13px;
+				font-family: 'Roboto', san-serif;
 			}
 
 			.header .header__search .header__search-submit {
@@ -210,30 +217,85 @@ a {
 .top-categories {
 	background-color: #fff;
 	border-bottom: 1px solid #e5e5e5;
-}
+	z-index: 100;
+}	
+	
+	.top-categories .top-categories__list {
+		margin: 0 11%;
+		text-align: center;
+	}
+
+	.top-categories .top-categories__list .top-categories__list__item {
+		width: 12%;
+		text-align: center;
+		display: inline-block;
+	}
 
 	.top-categories .top-categories__button {
 		display: inline-block;
 		background-color: #fff;
 		border: none;
-		padding: 20px 41px;
+		padding: 20px 0px;
 		font-family: 'HelveticaNeueCyr', sans-serif;
 		font-weight: 500;
 		color: #95989a;
 		font-size: 14px;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
+	}
+
+.menu {
+	position: relative;
+}
+
+.desktop-relative {
+	position: relative;
+}
+
+.desktop-menu {
+	background-color: #fff;
+	z-index: 10;
+	padding-top: 30px;
+	padding-bottom: 44px;
+	width: 100%;
+	position: absolute;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: none;
+}	
+	.desktop-menu.active {
+		display: block;
+	}
+
+	.desktop-menu .desktop-menu__section {
+		display: inline-block;
+		width: 19.5%;
 		float: left;
 	}
 
-	.top-categories .top-categories__button:first-child {
-		padding-left: 0;
+	.desktop-menu .desktop-menu__heading {
+		text-transform: uppercase;
+		color: #565656;
+		font-weight: 500;
+		font-size: 12px;
+		letter-spacing: 0.08em;
+	}
+	
+	.desktop-menu .desktop-menu__list {
+		margin-top: 20px;
 	}
 
-	.top-categories .top-categories__button:last-child {
-		padding-right: 0;
-		float: right;
+	.desktop-menu .desktop-menu__section.last .desktop-menu__list {
+		margin-top: 0;
 	}
+
+		.desktop-menu .desktop-menu__list__item {
+			padding: 6px 0;
+		}
+
+		.desktop-menu .desktop-menu__list__item:first-child {
+			padding-top: 0;
+		}
 
 .main-slider {
 	margin-top: 22px;
@@ -265,6 +327,7 @@ a {
 				.novelties .novelties__products .novelties__products__item .novelties__products__item__photo img {
 					width: 100%;
 					height: 100%;
+					object-fit: contain;
 				}
 
 				.novelties .novelties__products .novelties__products__item .novelties__products__item__photo .novelties__products__item__photo__new {
@@ -307,7 +370,7 @@ a {
 			.novelties .novelties__products .novelties__products__item .novelties__products__item__price {
 				font-size: 18px;
 				color: #777777;
-				margin-top: 18px;
+				margin-top: 11px;
 			}
 
 			.novelties .novelties__products .novelties__products__item .novelties__products__item__name {
@@ -334,6 +397,19 @@ a {
 				color: #b5b5b5;
 				font-size: 12px;
 				display: inline-block;
+			}	
+
+			.novelties .novelties__products .novelties__products__item .novelties__products__item__buy {
+				border: none;
+			    background-color: #9ed112;
+			    color: #fff;
+			    font-family: 'HelveticaNeueCyr', sans-serif;
+			    font-size: 10px;
+			    text-transform: uppercase;
+			    padding: 10px 17px;
+			    font-weight: 500;
+			    letter-spacing: 0.08em;
+			    margin-top: 9px;
 			}
 
 .products-pagination {
@@ -379,12 +455,12 @@ a {
 
 	.brands .brands__logos {
 		margin-top: 42px;
+		text-align: center;
 	}
 
 	.brands .brands__item {
 		display: inline-block;
-		float: left;
-		width: 158px;
+		width: 155px;
 		text-align: center;
 		margin-bottom: 20px;
 	}
@@ -605,3 +681,63 @@ a {
 		font-weight: 400;
 		margin-bottom: 38px;
 	}
+
+.mobile-header {
+	display: none;
+	background-color: #fff;
+	padding-bottom: 16px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+	.mobile-header .mobile-header__btn {
+		background-color: #fff;
+		font-size: 15px;
+		color: #95989a;
+		position: relative;
+	}
+
+	.mobile-header .mobile-header__left {
+		float: left;
+	}
+
+	.mobile-header .mobile-header__right {
+		float: right;
+	}
+
+	.mobile-header .mobile-header__logo { 
+		font-family: "Book Antiqua", serif;
+		font-weight: 600;
+		font-size: 15px;
+		color: #0a0a0a;
+		letter-spacing: 1px;
+	}
+
+	.mobile-header .mobile-header__btn__counter {
+				position: absolute;
+				background-color: #9ed112;
+				color: #fff;
+			    border-radius: 50%;
+			    width: 13px;
+			    font-size: 9px;
+			    font-family: 'Robot', sans-serif;
+			    font-weight: 600;
+			    left: 13px;
+			    top: -4px;
+			}
+
+		.mobile-header .mobile-header__btn__counter .mobile-header__btn__counter__number {
+			text-align: center;
+		    line-height: 13px;
+		    display: block;
+		}
+
+.page-hover {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 1;
+}
