@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Оформление заказа</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/HelveticaNeue/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/OpenSans/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/Roboto/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/MaterialDesignIcons/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	<!-- header navigation -->
+	<div class="header-nav d-none d-md-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav>
+						<a href="about.html" class="header-nav__link">О нас</a>
+						<a href="delivery.html" class="header-nav__link">Оплата и доставка</a>
+						<a href="news.html" class="header-nav__link">Новости</a>
+						<a href="contacts.html" class="header-nav__link">Контакты</a>
+						<button class="header-nav__link header-nav__link-right entry-btn">Вход в кабинет</button>
+						<div class="header-nav__modal">
+							<form id="login-form">
+								<p class="header-nav__modal__heading">Вход в личный кабинет</p>
+								<input type="text" class="header-nav__modal__input" name="email" placeholder="Ваш email">
+								<input type="password" class="header-nav__modal__input" name="password" placeholder="Ваш пароль">
+								<button class="header-nav__modal__submit">Войти</button>
+								<button type="button" class="header-nav__modal__forget forgot-btn">Забыли пароль?</button>
+								<button type="button" class="header-nav__modal__signup signup-btn">Регистрация</button>
+							</form>
+							<form id="change-password-form">
+								<p class="header-nav__modal__heading">Восстановление пароля</p>
+								<input type="text" class="header-nav__modal__input" name="email" placeholder="Ваш email">
+								<button class="header-nav__modal__submit">Напомнить</button>
+								<button type="button" class="header-nav__modal__forget signin-btn">Вход</button>
+								<button type="button" class="header-nav__modal__signup signup-btn">Регистрация</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of header navigation -->
+	
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<!-- header left section -->
+				<div class="col-md-4 order-sm-2 order-md-1">
+					<button class="header__call-btn">Обратный звонок</button>
+					<div class="header__phones">
+						<i class="mdi mdi-phone"></i>
+						<a href="tel:+380989635050" class="header__phones__link header__phones__link-first">+380 (98) 963 50 50</a>
+						<a href="tel:+380985841500" class="header__phones__link">+380 (98) 584 15 00</a>
+					</div>
+					<div class="header__clock">
+						<i class="mdi mdi-clock"></i>
+						<p class="header__clock__time">С 9:00 до 18:00 (Без выходных)</p>
+					</div>
+				</div>
+				<!-- end of header left section -->
+
+				<!-- header center section -->
+				<div class="col-md-4 d-none d-md-block order-sm-1 order-md-2">
+					<div class="header__central">
+						<a href="home.html">
+							<p class="header__central__logo">Organic Market</p>
+							<p class="header__central__text">Магазин органической косметики</p>
+						</a>
+					</div>
+				</div>
+				<!-- end of header center section -->
+	
+				<!-- header right section -->
+				<div class="col-md-4 d-none d-md-block order-sm-3 order-md-3">
+					<div class="header__search">
+						<input type="text" class="header__search-input">
+						<button type="submit" class="header__search-submit mdi mdi-magnify"></button>
+					</div>
+					<div class="header__user-icons">
+						<button class="header__user-icons__icon">
+							<i class="mdi mdi-heart-outline"></i>
+							<span class="header__user-icons__icon__counter">
+								<span class="header__user-icons__icon__counter__number">3</span>
+							</span>
+						</button>
+						<a href="basket.html" class="header__user-icons__icon">
+							<i class="mdi mdi-basket"></i>
+							<span class="header__user-icons__icon__counter">
+								<span class="header__user-icons__icon__counter__number">1</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<!-- end of header right section -->
+			</div>
+		</div>
+		
+		<!-- header for small devices -->
+		<div class="mobile-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="mobile-header__left">
+							<button class="mobile-header__btn" id="mobile-menu-btn"><i class="mdi mdi-menu"></i></button>
+							<button class="mobile-header__btn"><i class="mdi mdi-magnify"></i></button>
+						</div>
+						<a href="home.html" class="mobile-header__logo">Organic Market</a>
+						<div class="mobile-header__right">
+							<button class="mobile-header__btn">
+								<i class="mdi mdi-account-circle"></i>
+								<span class="mobile-header__btn__counter">
+									<span class="mobile-header__btn__counter__number">3</span>
+								</span>
+							</button>
+							<a href="basket.html" class="mobile-header__btn">
+								<i class="mdi mdi-basket"></i>
+								<span class="mobile-header__btn__counter">
+									<span class="mobile-header__btn__counter__number">3</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-border"></div>
+			<nav class="mobile-menu">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Волосы</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Лицо</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Тело</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Мужская</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Детская</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Для дома</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Акции</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Подарки</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">О магазине</a></li>
+					<li class="mobile-menu__list__item"><a href="#" class="mobile-menu__list__item__link">Оплата</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- end of header for small devices --> 
+	</header>
+	<!-- end of header -->
+	<div class="mobile-header-margin"></div>
+
+	<div class="page-hover"></div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/frontend.js"></script>	
+</body>
+</html>

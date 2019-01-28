@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Главная</title>
+	<title>Корзина</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts/HelveticaNeue/stylesheet.css">
@@ -12,8 +12,22 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jcf/theme-minimal/jcf.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jcf/jcf.js"></script>
+	
+	<script src="js/jcf/jcf.radio.js"></script>
+	<script src="js/jcf/jcf.range.js"></script>
+	
+	<script src="js/jcf/jcf.checkbox.js"></script>
+	
+	<script>
+		$(function() {
+			jcf.replaceAll();
+		});
+	</script>
 </head>
 <body>
 	<!-- header navigation -->
@@ -137,7 +151,7 @@
 	<!-- end of header -->
 	<div class="mobile-header-margin"></div>
 
-	<!-- categories list -->
+<!-- categories list -->
 	<div class="categories-outer white-bg d-none d-md-block">
 		<div class="container">
 			<div class="row">
@@ -661,468 +675,106 @@
 		</div>
 	</div>
 	<!-- end of categories list -->
-	
-	<!-- slider -->
-	<div class="main-slider">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="owl-carousel">
-						<div>
-							<img src="img/cream-1.jpg" alt="image">
-						</div>
-						<div>
-							<img src="img/natural_skincare_tease_today_160.jpg" alt="image">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end of slide -->
-	
-	<!-- novelties section -->
-	<div class="novelties">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="novelties__heading text-center">Новинки</h2>
-				</div>
-			</div>
-			<div class="novelties__products">
-				<div class="row">
-					<div class="col-6 col-lg-3">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">New</span>
-								<img src="img/03129-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">New</span>
-								<img src="img/03129-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3 d-none d-sm-block">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">New</span>
-								<img src="img/03129-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3 d-none d-sm-block">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">New</span>
-								<img src="img/03129-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="products-pagination text-center">
-						<button class="products-pagination__button active">1</button>
-						<button class="products-pagination__button">2</button>
-						<button class="products-pagination__button">3</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end of novelties section -->
 
-	<!-- discounts section -->
-	<div class="novelties discounts">
-		<div class="container">
+	<div class="basket">
+		<div class="container white-bg">
 			<div class="row">
-				<div class="col-md-12">
-					<h2 class="novelties__heading text-center">Новинки</h2>
-				</div>
-			</div>
-			<div class="novelties__products">
-				<div class="row">
-					<div class="col-6 col-lg-3">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">Sale</span>
-								<img src="img/01229-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">Sale</span>
-								<img src="img/01229-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3 d-none d-sm-block">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">Sale</span>
-								<img src="img/01229-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-lg-3 d-none d-sm-block">
-						<div class="novelties__products__item">
-							<div class="novelties__products__item__photo">
-								<span class="novelties__products__item__photo__new">Sale</span>
-								<img src="img/01229-175x175.jpg" alt="novelty">
-								<button class="novelties__products__item__photo__button cart"><i class="mdi mdi-cart-plus"></i></button>
-								<button class="novelties__products__item__photo__button like"><i class="mdi mdi-heart-outline"></i></button>
-							</div>
-							<div class="text-center">
-								<a href="#" class="novelties__products__item__name">Бальзам Зміцнення</a>
-							</div>
-							<div class="text-center">
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star active"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-								<div class="novelties__products__item__star"><i class="mdi mdi-star"></i></div>
-							</div>
-							<div class="text-center">
-								<a class="novelties__products__item__comments" href="#">5 отзывов</a>
-							</div>
-							<div class="text-center">
-								<p class="novelties__products__item__price">139 грн</p>
-								<button class="novelties__products__item__buy">Купить</button>
-							</div>
-						</div>
-					</div>
+				<div class="col-12">
+					<p class="basket__heading white-bg">Корзина</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="products-pagination text-center">
-						<button class="products-pagination__button active">1</button>
-						<button class="products-pagination__button">2</button>
-						<button class="products-pagination__button">3</button>
+				<div class="col-md-2 d-none d-md-block">
+					<p class="basket__column-heading">Фото</p>
+				</div>
+				<div class="col-md-2 d-none d-md-block">
+					<p class="basket__column-heading">Название</p>
+				</div>
+				<div class="col-md-2 d-none d-md-block">
+					<p class="basket__column-heading">Количество</p>
+				</div>
+				<div class="col-md-3 d-none d-md-block text-center">
+					<p class="basket__column-heading">Цена</p>
+				</div>
+				<div class="col-md-3 d-none d-md-block text-center">
+					<p class="basket__column-heading">Удалить</p>
+				</div>
+			</div>
+			<div class="row basket__product">
+				<div class="col-md-2">
+					<button class="basket__product__delete basket__product__delete-small basket-remove-btn"><i class="mdi mdi-close"></i></button>
+					<div class="basket__product__image">
+						<img src="img/01014-175x175.jpg" alt="">
 					</div>
+				</div>
+				<div class="col-md-2">
+					<p class="basket__product__name">Бальзам Зміцнення</p>
+				</div>
+				<div class="col-md-2">
+					<div class="counter">
+						<input type="hidden" class="product-price" value="139">
+						<div class="basket__product__amount">
+							<button class="basket__product__amount__button basket-minus-btn">-</button> <span class="basket-product-amount">1</span> <button class="basket__product__amount__button basket-plus-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<p class="basket__product__price">139 грн</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<button class="basket__product__delete basket-remove-btn"><i class="mdi mdi-close"></i></button>
+				</div>
+			</div>
+			<div class="row basket__product">
+				<div class="col-md-2">
+					<div class="basket__product__image">
+						<img src="img/01014-175x175.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-2">
+					<p class="basket__product__name">Бальзам Зміцнення</p>
+				</div>
+				<div class="col-md-2">
+					<div class="counter">
+						<input type="hidden" class="product-price" value="139">
+						<div class="basket__product__amount">
+							<button class="basket__product__amount__button basket-minus-btn">-</button> <span class="basket-product-amount">1</span> <button class="basket__product__amount__button basket-plus-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<p class="basket__product__price">139 грн</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<button class="basket__product__delete basket-remove-btn"><i class="mdi mdi-close"></i></button>
+				</div>
+			</div>
+			<div class="row basket__product">
+				<div class="col-md-2">
+					<div class="basket__product__image">
+						<img src="img/01014-175x175.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-2">
+					<p class="basket__product__name">Бальзам Зміцнення</p>
+				</div>
+				<div class="col-md-2">
+					<div class="counter">
+						<input type="hidden" class="product-price" value="139">
+						<div class="basket__product__amount">
+							<button class="basket__product__amount__button basket-minus-btn">-</button> <span class="basket-product-amount">1</span> <button class="basket__product__amount__button basket-plus-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<p class="basket__product__price">139 грн</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<button class="basket__product__delete basket-remove-btn"><i class="mdi mdi-close"></i></button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end of discounts section -->
-	
-	<!-- brands -->
-	<div class="brands d-none d-sm-block">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="brands__heading text-center">Бренды</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="brands__logos">
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-						<div class="brands__item">
-							<a href="#" class="brands__item__link">
-								<img src="img/brand.jpg" alt="brand" class="brands__item__link__image">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end of brands -->
-	
-	<!-- news sections -->
-	<div class="news d-none d-sm-block">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="news__heading text-center">Новости</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<div class="news__post">
-						<a href="#"><img src="img/naturalne-kosmetyki.jpg" class="news__post__image" alt="post"></a>
-						<div class="news__post__info">
-							<a href="#" class="news__post__info__title">ТМ ЯКА доступна в продаже нашего магазина!</a>
-							<p class="news__post__info__date">5 Августа 2017</p>
-							<p class="news__post__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis dolor fugit, totam voluptatem omnis odit aliquam expedita modi vel?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="news__post">
-						<a href="#"><img src="img/naturalne-kosmetyki.jpg" class="news__post__image" alt="post"></a>
-						<div class="news__post__info">
-							<a href="#" class="news__post__info__title">ТМ ЯКА доступна в продаже нашего магазина!</a>
-							<p class="news__post__info__date">5 Августа 2017</p>
-							<p class="news__post__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis dolor fugit, totam voluptatem omnis odit aliquam expedita modi vel?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="news__post">
-						<a href="#"><img src="img/naturalne-kosmetyki.jpg" class="news__post__image" alt="post"></a>
-						<div class="news__post__info">
-							<a href="#" class="news__post__info__title">ТМ ЯКА доступна в продаже нашего магазина!</a>
-							<p class="news__post__info__date">5 Августа 2017</p>
-							<p class="news__post__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis dolor fugit, totam voluptatem omnis odit aliquam expedita modi vel?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="news__post">
-						<a href="#"><img src="img/naturalne-kosmetyki.jpg" class="news__post__image" alt="post"></a>
-						<div class="news__post__info">
-							<a href="#" class="news__post__info__title">ТМ ЯКА доступна в продаже нашего магазина!</a>
-							<p class="news__post__info__date">5 Августа 2017</p>
-							<p class="news__post__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis dolor fugit, totam voluptatem omnis odit aliquam expedita modi vel?</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end of news section -->
 
 	<!-- footer -->
 	<footer class="footer">
